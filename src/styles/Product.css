@@ -1,0 +1,13 @@
+.pcontainer{
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 1%;
+    padding: 3%;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.imgdiv{
+    padding: auto;
+    width: 80%;
+    border: 1px solid red;
+}
