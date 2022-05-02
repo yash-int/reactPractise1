@@ -1,0 +1,7 @@
+{
+    "items":[
+{"id":1,"name":"Red Woollen","price":200,"image":"https://images.unsplash.com/photo-1651342717469-56d76efbdae5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"},
+{"id":2,"name":"Royal Enfield Bullta","price":300,"image":"https://rukminim2.flixcart.com/image/416/416/kly2aa80/cases-covers/back-cover/v/x/g/acs02742-spigen-original-imagyypy95b9ktmk.jpeg?q=70"},
+{"id":3,"name":"Oppo Reno V3","price":400,"image":"https://images.unsplash.com/photo-1644982648600-4583461837f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"}
+    ]
+}
