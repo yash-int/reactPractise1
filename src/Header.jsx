@@ -4,11 +4,15 @@ import amazon__logo from "./images/amazon__logo.png";
 import { BiSearch } from "react-icons/bi";
 import { FaShoppingBasket } from "react-icons/fa";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
+      <Link to={"/"}>
+        
       <img className="header__logo" src={amazon__logo} alt="amazon_logo" />
+      </Link>
 
       <div className="header__search">
         <input type="text" className="header__searchInput" />
@@ -28,10 +32,12 @@ function Header() {
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
+        <Link to={"/checkout"}>
         <div className="header__optionBasket">
           <FaShoppingBasket />
           <span className="header__basketCount">0</span>
         </div>
+        </Link>
       </div>
     </div>
   );

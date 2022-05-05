@@ -5,7 +5,7 @@ function Product({ title, price, link, rating,  }) {
   return (
     <div className="product">
       <div className="product__info">
-        {/* {id} */}
+        
         <p>{title}</p>
         <p className="product__price">
           <small>$</small>
@@ -15,8 +15,10 @@ function Product({ title, price, link, rating,  }) {
           {Array(rating)
             .fill()
             .map((_, i) => {
-              
-              <p>⭐</p>;
+              return(
+
+                <p>⭐</p>
+                )
             })}
         </div>
       </div>
