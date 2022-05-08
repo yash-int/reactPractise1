@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CheckoutProduct.css"
-function CheckoutProduct() {
+function CheckoutProduct({link,price,title,rating}) {
   return (
     <div>
         <div className="checkoutProduct">
