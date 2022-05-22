@@ -22,11 +22,11 @@ function Home() {
         />
         <div className="home__row">
           <Product 
-          id={1234}
+          id={1233}
           title={"The lean startup"} 
           price={"19.99"} link={nivea} rating={5} />
 
-          <Product title={"The future Camera"}id={1233}
+          <Product title={"The future Camera"}id={1234}
           price={"28.01"} link={camera} rating={5} />
         </div>
         <div className="home__row">

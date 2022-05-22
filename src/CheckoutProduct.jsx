@@ -3,11 +3,11 @@ import "./CheckoutProduct.css"
 import { useStateValue } from './StateProvider'
 function CheckoutProduct({link,price,title,rating,id}) {
     const data={
+        id:id,
         link:link,
         price:price,
         title:title,
-        rating:rating,
-        id:id
+        rating:rating
     }
     useEffect(()=>{
         
@@ -21,7 +21,7 @@ function CheckoutProduct({link,price,title,rating,id}) {
         })
     }
     return (
-    <div key={data.id}>
+    <div >
         <div className="checkoutProduct">
             <img src={data.link} alt="#" className="checkoutProduct__image" 
             />

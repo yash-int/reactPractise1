@@ -24,6 +24,7 @@ export const reducer=(state,action)=>{
 
                if(index>=0){
                    newBasket.splice(index,1);
+                //    newBasket.delete(index);
                }
                else{
                    console.warn(
