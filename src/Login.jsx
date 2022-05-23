@@ -3,12 +3,28 @@ import { Link } from 'react-router-dom';
 import amazon__logo from './images/amazon__logo.png'
 import { auth  } from './firebase.js';
 import "./login.css";
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 function Login() {
+  const history = useHistory()
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
+//signing in with created user
+
   function signin(e){
     e.preventDefault()
-  }
+    auth
+    .signInWithEmailAndPassword(email,password)
+    .then(auth=>{
+
+      history.push('/')
+      
+      
+    })
+.catch(error=>alert(error.message))
+}
+
+// creating new user
+
   function register(e){
     e.preventDefault()
 
@@ -16,6 +32,9 @@ function Login() {
      .createUserWithEmailAndPassword(email,password)
      .then((auth)=>{
        console.log(auth);
+       if(auth){
+         history.push('/')
+       }
      })
      .catch(error => alert (error.message))
   }
