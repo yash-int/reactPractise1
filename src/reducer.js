@@ -32,6 +32,12 @@ export const reducer=(state,action)=>{
                        as its not in basket!`
                    )
                };
+               case "SET_USER" :
+                   return{
+                       ...state,
+                       user:action.user
+
+                   }
 
             default:
                 return state;
