@@ -8,6 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path={"/login"}><Header /><h1>login page</h1></Route>
           <Route path={"/checkout"}>
             <Header />
             <Checkout />
